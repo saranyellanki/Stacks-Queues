@@ -16,7 +16,15 @@ public class Queue<T> {
      * @param data is a T type data which is added to list
      */
     public void enqueue(T data){
-        linkedList.add(data);
+        linkedList.append(data);
+    }
+
+    /**
+     * dequeue method has ability to remove the last data
+     * used popLast method from linked list for dequeue
+     */
+    public void dequeue(){
+        linkedList.popLast();
     }
 
     public static void main(String[] args) {
