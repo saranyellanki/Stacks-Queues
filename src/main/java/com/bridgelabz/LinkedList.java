@@ -128,6 +128,14 @@ public class LinkedList<T> {
         }
     }
 
+    public void peek(){
+        if(head==null){
+            System.out.println("List is empty");
+        }else {
+            System.out.println(head.data);
+        }
+    }
+
     public void show() {
         Node<T> temp = head;
         if (head == null) {
